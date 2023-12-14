@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <p>Brooklyn Public Library <div class=about-container> <button class="section-button" onclick="showSection('section1')">About</button></p></div>
+    </head>
+    <body>
+        <script>
+            function showSection(sectionId) {
+              // Скрываем все секции
+              const sections = document.querySelectorAll('div[id^="section"]');
+              sections.forEach(section => {
+                section.style.display = 'none';
+              });
+            
+              // Показываем выбранную секцию
+              const selectedSection = document.getElementById(sectionId);
+              if (selectedSection) {
+                selectedSection.style.display = 'block';
+              }
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
+    <header>
+    </header>
+    <main>
+        <div id="section1" class="section-content" style="display: none;">
+        About
+        </div>
+    </main>
+    <footer></footer>
+    </body>
+
+</html>
