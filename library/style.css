@@ -1,18 +1,50 @@
-/* p{color:gold;} */
-.section-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    user-select: none; /* Предотвращает выделение текста */
+.navigation{display:flex;}
+
+h1{line-height: 50px;font-size: 30px;color: #FFF;letter-spacing: 0.6px;font-weight: 400;
+  font-family: 'Forum', serif;
+}
+html{height:100%;}
+body{height: 20%;
+  margin:0;
+
+}
+button{padding: 0;padding-block: 0;padding-inline: 0;
+  color:white;
+}
+.icon{margin-left: 40px;
+
+}
+
+
+ .section-button:hover{font-weight: bold;} 
+.section-button {border: none; background: none; cursor: pointer; user-select: none;display:inline-block; /* Предотвращает выделение текста */}/* Дополнительные стили для улучшения внешнего вида */
+.header{align-items: center;font-style: normal;font-family: Inter;padding: 0 1.39%;justify-content: space-between;
+  font-weight: 400;
+
+  height:90px;
+  color: white;
+  position: relative;
+  background-color: black;  
+    margin-top: 0px;
+  display: flex;
   }
-  
-  /* Дополнительные стили для улучшения внешнего вида */
-  .section-content {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  /* Пример для всех элементов с классом "text-element" */
-  .about-container {
-    margin-left: 20px; /* Внешний отступ слева для контейнера кнопки "About" */
-  }
+.header-left-side{align-items: center;
+  display:flex;
+}
+body header nav a{display: flex; text-decoration: none;}
+
+.navigation-list {
+  list-style: none;
+  gap: 30px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navigation-list li a{
+  color: #FFF;font-family: inter;font-size: 20px;line-height: 50px;
+}
+.navigation-list li a:hover{font-weight: bold;}
+.welcome-bg{background: black;padding: 35px 2.78% ;width: 36.11%;height: 150px;margin-top: 220px;}
+.main{display: flex;font-family:Forum;font-size: 40px;line-height: 50px;letter-spacing: 3px;text-transform: uppercase;}
+.welcome-bg h2{color: white;text-align: center;font-style: normal;font-weight: 400;margin: 0;font-size: 40px;}
+.overlay{background-image: url(изображения/Welcome.png);width: 100%;height: 600px;}
